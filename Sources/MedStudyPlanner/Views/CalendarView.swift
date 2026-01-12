@@ -312,7 +312,10 @@ struct PlanWizardView: View {
         for _ in 0..<highYieldDays {
             // Skip Sundays
             while calendar.component(.weekday, from: currentDate) == 1 {
-                currentDate = calendar.date(byAdding: .day, value: 1, to: currentDate)!
+                guard let nextDate = calendar.date(byAdding: .day, value: 1, to: currentDate) else {
+                    break
+                }
+                currentDate = nextDate
             }
             
             var taskTopicIDs: [UUID] = []
@@ -329,7 +332,10 @@ struct PlanWizardView: View {
                 modelContext.insert(task)
             }
             
-            currentDate = calendar.date(byAdding: .day, value: 1, to: currentDate)!
+            guard let nextDate = calendar.date(byAdding: .day, value: 1, to: currentDate) else {
+                break
+            }
+            currentDate = nextDate
         }
         
         // Remaining days for other topics
@@ -337,7 +343,10 @@ struct PlanWizardView: View {
         while topicIndex < otherTopics.count && currentDate < examDay {
             // Skip Sundays
             while calendar.component(.weekday, from: currentDate) == 1 {
-                currentDate = calendar.date(byAdding: .day, value: 1, to: currentDate)!
+                guard let nextDate = calendar.date(byAdding: .day, value: 1, to: currentDate) else {
+                    break
+                }
+                currentDate = nextDate
             }
             
             var taskTopicIDs: [UUID] = []
@@ -354,7 +363,10 @@ struct PlanWizardView: View {
                 modelContext.insert(task)
             }
             
-            currentDate = calendar.date(byAdding: .day, value: 1, to: currentDate)!
+            guard let nextDate = calendar.date(byAdding: .day, value: 1, to: currentDate) else {
+                break
+            }
+            currentDate = nextDate
         }
         
         plan.dailyTasks = dailyTasksList

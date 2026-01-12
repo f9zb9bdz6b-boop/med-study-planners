@@ -81,7 +81,7 @@ struct TopicDetailView: View {
                 // Action Buttons
                 HStack(spacing: 16) {
                     Button {
-                        // Atlas action (placeholder)
+                        // TODO: Implement Atlas image gallery feature
                     } label: {
                         HStack {
                             Image(systemName: "photo.stack")

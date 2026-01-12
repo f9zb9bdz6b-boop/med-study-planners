@@ -89,10 +89,11 @@ struct NotesView: View {
     }
     
     private func getLMROpacity(for text: String) -> Double {
-        // In LMR mode, fade non-header/non-bold text
-        // This is a simplified implementation - in a real app you'd parse markdown
-        // For now, return base opacity that makes regular text faded
-        return 1.0 // Keep full opacity; proper implementation would require markdown parsing
+        // TODO: Implement proper markdown parsing for LMR mode
+        // For now, keep full opacity - proper implementation would require
+        // parsing markdown to identify headers (#) and bold (**) sections
+        // and applying opacity selectively to other text
+        return 1.0
     }
 }
 

@@ -1,0 +1,82 @@
+{
+  "": {
+    "swift-dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/master.swiftdeps"
+  },
+  "/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/MedSprintApp.swift": {
+    "dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/MedSprintApp.d",
+    "object": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/MedSprintApp.swift.o",
+    "swiftmodule": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/MedSprintApp~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/MedSprintApp.swiftdeps",
+    "diagnostics": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/MedSprintApp.dia"
+  },
+  "/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Models/DataSeeder.swift": {
+    "dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DataSeeder.d",
+    "object": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DataSeeder.swift.o",
+    "swiftmodule": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DataSeeder~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DataSeeder.swiftdeps",
+    "diagnostics": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DataSeeder.dia"
+  },
+  "/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Models/Models.swift": {
+    "dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/Models.d",
+    "object": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/Models.swift.o",
+    "swiftmodule": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/Models~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/Models.swiftdeps",
+    "diagnostics": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/Models.dia"
+  },
+  "/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/AnalyticsView.swift": {
+    "dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/AnalyticsView.d",
+    "object": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/AnalyticsView.swift.o",
+    "swiftmodule": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/AnalyticsView~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/AnalyticsView.swiftdeps",
+    "diagnostics": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/AnalyticsView.dia"
+  },
+  "/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/CalendarView.swift": {
+    "dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/CalendarView.d",
+    "object": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/CalendarView.swift.o",
+    "swiftmodule": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/CalendarView~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/CalendarView.swiftdeps",
+    "diagnostics": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/CalendarView.dia"
+  },
+  "/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/DashboardView.swift": {
+    "dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DashboardView.d",
+    "object": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DashboardView.swift.o",
+    "swiftmodule": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DashboardView~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DashboardView.swiftdeps",
+    "diagnostics": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DashboardView.dia"
+  },
+  "/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/FocusTimerView.swift": {
+    "dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/FocusTimerView.d",
+    "object": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/FocusTimerView.swift.o",
+    "swiftmodule": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/FocusTimerView~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/FocusTimerView.swiftdeps",
+    "diagnostics": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/FocusTimerView.dia"
+  },
+  "/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/NotesView.swift": {
+    "dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/NotesView.d",
+    "object": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/NotesView.swift.o",
+    "swiftmodule": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/NotesView~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/NotesView.swiftdeps",
+    "diagnostics": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/NotesView.dia"
+  },
+  "/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/SettingsView.swift": {
+    "dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SettingsView.d",
+    "object": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SettingsView.swift.o",
+    "swiftmodule": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SettingsView~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SettingsView.swiftdeps",
+    "diagnostics": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SettingsView.dia"
+  },
+  "/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/SubjectListView.swift": {
+    "dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SubjectListView.d",
+    "object": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SubjectListView.swift.o",
+    "swiftmodule": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SubjectListView~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SubjectListView.swiftdeps",
+    "diagnostics": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SubjectListView.dia"
+  },
+  "/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/TopicDetailView.swift": {
+    "dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/TopicDetailView.d",
+    "object": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/TopicDetailView.swift.o",
+    "swiftmodule": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/TopicDetailView~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/TopicDetailView.swiftdeps",
+    "diagnostics": "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/TopicDetailView.dia"
+  }
+}
