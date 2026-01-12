@@ -1,0 +1,54 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "MedStudyPlanner-x86_64-unknown-linux-gnu-debug.module": ["<MedStudyPlanner-x86_64-unknown-linux-gnu-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<MedStudyPlanner-x86_64-unknown-linux-gnu-debug.module>"]
+  "test": ["<MedStudyPlanner-x86_64-unknown-linux-gnu-debug.module>"]
+default: "main"
+nodes:
+  "/home/runner/work/med-study-planners/med-study-planners/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/MedStudyPlanner.swiftmodule.o":
+    tool: shell
+    inputs: ["/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/Modules/MedStudyPlanner.swiftmodule"]
+    outputs: ["/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/MedStudyPlanner.swiftmodule.o"]
+    description: "Wrapping AST for MedStudyPlanner for debugging"
+    args: ["/usr/share/swift/usr/bin/swiftc","-modulewrap","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/Modules/MedStudyPlanner.swiftmodule","-o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/MedStudyPlanner.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/MedSprintApp.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Models/DataSeeder.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Models/Models.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/AnalyticsView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/CalendarView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/DashboardView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/FocusTimerView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/NotesView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/SettingsView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/SubjectListView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/TopicDetailView.swift"]
+    outputs: ["/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/sources"]
+    description: "Write auxiliary file /home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/sources"
+
+  "/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/usr/share/swift/usr/bin/swiftc"]
+    outputs: ["/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt"
+
+  "<MedStudyPlanner-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/MedSprintApp.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DataSeeder.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/Models.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/AnalyticsView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/CalendarView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DashboardView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/FocusTimerView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/NotesView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SettingsView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SubjectListView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/TopicDetailView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/Modules/MedStudyPlanner.swiftmodule"]
+    outputs: ["<MedStudyPlanner-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "C.MedStudyPlanner-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/MedSprintApp.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Models/DataSeeder.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Models/Models.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/AnalyticsView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/CalendarView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/DashboardView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/FocusTimerView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/NotesView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/SettingsView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/SubjectListView.swift","/home/runner/work/med-study-planners/med-study-planners/Sources/MedStudyPlanner/Views/TopicDetailView.swift","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/sources"]
+    outputs: ["/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/MedSprintApp.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DataSeeder.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/Models.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/AnalyticsView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/CalendarView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/DashboardView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/FocusTimerView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/NotesView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SettingsView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/SubjectListView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/TopicDetailView.swift.o","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/Modules/MedStudyPlanner.swiftmodule"]
+    description: "Compiling Swift Module 'MedStudyPlanner' (11 sources)"
+    args: ["/usr/share/swift/usr/bin/swiftc","-module-name","MedStudyPlanner","-emit-dependencies","-emit-module","-emit-module-path","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/Modules/MedStudyPlanner.swiftmodule","-output-file-map","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/output-file-map.json","-parse-as-library","-incremental","-c","@/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/sources","-I","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/home/runner/work/med-study-planners/med-study-planners/.build/x86_64-unknown-linux-gnu/debug/MedStudyPlanner.build/include/MedStudyPlanner-Swift.h","-swift-version","6","-g","-Xcc","-fPIC","-Xcc","-g","-package-name","med_study_planners","-Xcc","-fno-omit-frame-pointer"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/home/runner/work/med-study-planners/med-study-planners/Sources/","/home/runner/work/med-study-planners/med-study-planners/Package.swift","/home/runner/work/med-study-planners/med-study-planners/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
