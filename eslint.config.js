@@ -6,13 +6,14 @@ import tseslint from 'typescript-eslint'
 
 export default [
   { ignores: ['dist'] },
+  js.configs.recommended,
+  ...tseslint.configs.recommended,
   {
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
     },
-    ...js.configs.recommended,
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
@@ -25,8 +26,4 @@ export default [
       ],
     },
   },
-  ...tseslint.configs.recommended.map((config) => ({
-    ...config,
-    files: ['**/*.{ts,tsx}'],
-  })),
 ]

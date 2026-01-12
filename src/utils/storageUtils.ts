@@ -17,7 +17,10 @@ export function loadFromLocalStorage<T>(key: string, defaultValue: T): T {
   try {
     const serialized = localStorage.getItem(key);
     if (serialized === null) return defaultValue;
-    return JSON.parse(serialized) as T;
+    const parsed = JSON.parse(serialized);
+    // Return parsed data, relying on TypeScript's type system at compile time
+    // Runtime validation would require a schema validation library
+    return parsed as T;
   } catch (error) {
     console.error(`Error loading from localStorage: ${error}`);
     return defaultValue;

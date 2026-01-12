@@ -36,6 +36,8 @@ export function getWeakTopics(topics: StudyTopic[], limit: number = 5): StudyTop
     .slice(0, limit);
 }
 
+const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
+
 /**
  * Calculate days until exam
  */
@@ -43,7 +45,7 @@ export function getDaysUntilExam(examDate?: Date): number | undefined {
   if (!examDate) return undefined;
   const now = new Date();
   const diff = examDate.getTime() - now.getTime();
-  return Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24)));
+  return Math.max(0, Math.ceil(diff / MILLISECONDS_PER_DAY));
 }
 
 /**
